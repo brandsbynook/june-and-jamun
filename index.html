@@ -14,10 +14,11 @@
                 extend: {
                     colors: {
                         linen: '#F4F1EA',
-                        forest: '#2F3E2E',
-                        darkforest: '#212B20',
+                        forest: '#1E2B1D',
+                        darkforest: '#141D13',
                         terracotta: '#8C4A32',
-                        sand: '#E2DDD2'
+                        sand: '#E5DFD3',
+                        cardbg: '#F9F7F2'
                     },
                     fontFamily: {
                         serif: ['Georgia', 'Cambria', 'serif'],
@@ -46,25 +47,25 @@
     }
     </script>
 </head>
-<body class="bg-forest text-linen font-sans antialiased selection:bg-terracotta selection:text-linen relative min-h-screen">
+<body class="bg-forest text-[#2D372A] font-sans antialiased selection:bg-terracotta selection:text-linen relative min-h-screen">
 
-    <!-- ATMOSPHERIC PHOTOGRAPHIC BACKGROUND OVERLAY -->
-    <div class="fixed inset-0 pointer-events-none z-0 opacity-25 mix-blend-overlay bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=1920&auto=format&fit=crop');"></div>
+    <!-- ORGANIC BOTANICAL PATTERN BACKGROUND (Inspired by your references) -->
+    <div class="fixed inset-0 pointer-events-none z-0 opacity-15" style="background-image: radial-gradient(#4A6B46 1px, transparent 1px), radial-gradient(#4A6B46 1px, #1E2B1D 1px); background-size: 40px 40px; background-position: 0 0, 20px 20px;"></div>
 
     <!-- HEADER / NAV -->
-    <header class="sticky top-0 z-50 bg-[#212B20]/90 backdrop-blur-md border-b border-[#3F523D]">
+    <header class="sticky top-0 z-50 bg-[#1E2B1D]/95 backdrop-blur-md border-b border-[#2F422D]">
         <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
             <div>
                 <span class="font-serif text-2xl tracking-tight text-linen">June & Jamun</span>
-                <p class="text-[11px] uppercase tracking-widest text-[#B5C4B1]">Your balcony orchard.</p>
+                <p class="text-[11px] uppercase tracking-widest text-[#A3B89F]">Your balcony orchard.</p>
             </div>
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-[#D5DDD2]">
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-[#C5D5C1]">
                 <a href="#philosophy" class="hover:text-linen transition">Philosophy</a>
                 <a href="#catalogue" class="hover:text-linen transition">Catalogue</a>
                 <a href="#faq" class="hover:text-linen transition">FAQ</a>
                 <a href="#contact" class="hover:text-linen transition">Contact</a>
             </nav>
-            <a href="https://wa.me/919064240211?text=Hi! I would like to browse the full June & Jamun catalogue." target="_blank" rel="noopener noreferrer" class="bg-linen text-forest px-5 py-2.5 rounded-xl text-xs font-medium hover:bg-sand transition">
+            <a href="https://wa.me/919064240211?text=Hi! I would like to browse the full June & Jamun catalogue." target="_blank" rel="noopener noreferrer" class="bg-linen text-forest px-5 py-2.5 rounded-xl text-xs font-medium hover:bg-sand transition shadow-sm">
                 WhatsApp Catalogue ↗
             </a>
         </div>
@@ -73,53 +74,53 @@
     <!-- HERO SECTION -->
     <main class="max-w-5xl mx-auto px-6 pt-20 pb-24 relative z-10">
         <section class="text-center max-w-2xl mx-auto space-y-6">
-            <span class="inline-block px-3.5 py-1.5 rounded-full bg-[#3F523D] text-[#D5DDD2] text-xs font-semibold tracking-wider uppercase border border-[#526B50]">
+            <span class="inline-block px-3.5 py-1.5 rounded-full bg-[#2F422D] text-[#D2E2CE] text-xs font-semibold tracking-wider uppercase border border-[#435C40]">
                 True-to-Type Grafted Fruit Saplings
             </span>
             <h1 class="font-serif text-4xl md:text-6xl text-linen leading-tight">
                 Your balcony orchard. Grown from the ground up.
             </h1>
-            <p class="text-base md:text-lg text-[#B5C4B1] leading-relaxed">
+            <p class="text-base md:text-lg text-[#C5D5C1] leading-relaxed">
                 We bring heritage fruit trees, container-ready dwarf mangoes, lemons, and lush seasonal greenery right to your high-rise terrace and urban apartment ledge.
             </p>
             <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
                 <a href="#catalogue" class="w-full sm:w-auto bg-linen text-forest px-8 py-3.5 rounded-xl text-sm font-medium hover:bg-sand transition text-center shadow-sm">
                     Explore Live Varieties
                 </a>
-                <a href="https://wa.me/919064240211?text=Hi! I need expert help choosing fruit trees for my balcony sunlight hours." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-[#263325] text-linen border border-[#445A42] px-8 py-3.5 rounded-xl text-sm font-medium hover:bg-[#344632] transition text-center">
+                <a href="https://wa.me/919064240211?text=Hi! I need expert help choosing fruit trees for my balcony sunlight hours." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-[#2F422D] text-linen border border-[#435C40] px-8 py-3.5 rounded-xl text-sm font-medium hover:bg-[#395037] transition text-center">
                     Chat with Nursery Desk ↗
                 </a>
             </div>
         </section>
 
-        <!-- BRAND PHILOSOPHY -->
-        <section id="philosophy" class="mt-28 bg-[#263325]/80 backdrop-blur-sm border border-[#3F523D] rounded-3xl p-8 md:p-12 space-y-8 shadow-xl">
-            <div class="border-b border-[#3F523D] pb-6">
+        <!-- BRAND PHILOSOPHY (High-contrast solid card for readability) -->
+        <section id="philosophy" class="mt-28 bg-cardbg border border-sand rounded-3xl p-8 md:p-12 space-y-8 shadow-2xl">
+            <div class="border-b border-sand pb-6">
                 <span class="text-xs font-semibold tracking-widest text-terracotta uppercase">Our Manifesto</span>
-                <h2 class="font-serif text-3xl text-linen mt-1">The Balcony Orchard Philosophy</h2>
+                <h2 class="font-serif text-3xl text-forest mt-1">The Balcony Orchard Philosophy</h2>
             </div>
             
-            <div class="grid md:grid-cols-2 gap-8 text-sm leading-relaxed text-[#C5D3C1]">
+            <div class="grid md:grid-cols-2 gap-8 text-sm leading-relaxed text-[#444D41]">
                 <div class="space-y-3">
-                    <h3 class="font-serif text-xl text-linen font-medium">Why we exist</h3>
+                    <h3 class="font-serif text-xl text-forest font-medium">Why we exist</h3>
                     <p>
                         Urban high-rises disconnected us from the soil. Most online nurseries treat plants like disposable home-decor trinkets. We built June & Jamun to return authentic, productive fruit trees to the urban homes that need them most.
                     </p>
                 </div>
                 <div class="space-y-3">
-                    <h3 class="font-serif text-xl text-linen font-medium">Acclimatized for Containers</h3>
+                    <h3 class="font-serif text-xl text-forest font-medium">Acclimatized for Containers</h3>
                     <p>
                         Open-ground farm trees won't survive in a high-rise pot. We specialize exclusively in container-acclimatized, true-to-type grafted saplings engineered to fruit early in 14-inch to 24-inch balcony pots.
                     </p>
                 </div>
                 <div class="space-y-3">
-                    <h3 class="font-serif text-xl text-linen font-medium">Season & Climate Intelligence</h3>
+                    <h3 class="font-serif text-xl text-forest font-medium">Season & Climate Intelligence</h3>
                     <p>
                         Fruit gardening requires timing. We provide precise micro-climate guidance, soil science, and container architecture so your trees thrive regardless of your city's weather.
                     </p>
                 </div>
                 <div class="space-y-3">
-                    <h3 class="font-serif text-xl text-linen font-medium">Continuous Care Support</h3>
+                    <h3 class="font-serif text-xl text-forest font-medium">Continuous Care Support</h3>
                     <p>
                         Your journey doesn't end at delivery. Get direct post-purchase guidance, watering schedules, and disease troubleshooting from our horticulturists via WhatsApp.
                     </p>
@@ -127,188 +128,188 @@
             </div>
         </section>
 
-        <!-- LIVE CATALOGUE SHOWCASE (Built from agro_bloomers_db.json) -->
+        <!-- LIVE CATALOGUE SHOWCASE -->
         <section id="catalogue" class="mt-28 space-y-8">
             <div class="text-center max-w-xl mx-auto space-y-3">
-                <span class="text-xs font-semibold tracking-widest text-[#B5C4B1] uppercase">Featured Inventory</span>
+                <span class="text-xs font-semibold tracking-widest text-[#A3B89F] uppercase">Featured Inventory</span>
                 <h2 class="font-serif text-3xl md:text-4xl text-linen">The Balcony Orchard Catalogue</h2>
-                <p class="text-sm text-[#B5C4B1]">Tap any variety to inquire or adopt directly through our WhatsApp nursery desk.</p>
+                <p class="text-sm text-[#C5D5C1]">Tap any variety to inquire or adopt directly through our WhatsApp nursery desk.</p>
             </div>
 
-            <!-- Grid of Database Items -->
+            <!-- Grid of Database Items (High-contrast solid cards) -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
                 
                 <!-- Miyazaki Mango -->
-                <div class="bg-[#263325]/80 backdrop-blur-sm border border-[#3F523D] rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-md">
+                <div class="bg-cardbg border border-sand rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-xl">
                     <div class="space-y-2">
                         <div class="flex justify-between items-start">
-                            <span class="text-[10px] tracking-wider uppercase bg-[#3F523D] text-[#D5DDD2] px-2 py-0.5 rounded">Rare Mangoes</span>
-                            <span class="font-serif text-linen font-semibold">₹999</span>
+                            <span class="text-[10px] tracking-wider uppercase bg-[#E2DDD2] text-forest px-2 py-0.5 rounded font-medium">Rare Mangoes</span>
+                            <span class="font-serif text-forest font-bold">₹999</span>
                         </div>
-                        <h3 class="font-serif text-lg text-linen pt-1">Miyazaki Mango</h3>
-                        <p class="text-[11px] text-[#A8BCA3] italic">Mangifera indica 'Miyazaki'</p>
-                        <p class="text-xs text-[#C5D3C1] pt-1 leading-relaxed">The world's most prized ruby-red mango, thrives in balcony pots with full sun.</p>
+                        <h3 class="font-serif text-lg text-forest pt-1">Miyazaki Mango</h3>
+                        <p class="text-[11px] text-[#60695B] italic">Mangifera indica 'Miyazaki'</p>
+                        <p class="text-xs text-[#555D52] pt-1 leading-relaxed">The world's most prized ruby-red mango, thrives in balcony pots with full sun.</p>
                     </div>
-                    <div class="border-t border-[#3F523D] pt-3 space-y-2">
-                        <div class="text-[11px] text-[#A8BCA3] flex justify-between">
+                    <div class="border-t border-sand pt-3 space-y-2">
+                        <div class="text-[11px] text-[#60695B] flex justify-between">
                             <span>Fit: 18-24" Pot</span>
                             <span>Harvest: 1.5-2.5 Yr</span>
                         </div>
-                        <a href="https://wa.me/919064240211?text=Hi! I would like to adopt the Miyazaki Mango (₹999) for my balcony." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-linen text-forest py-2 rounded-xl text-xs font-medium hover:bg-sand transition">
+                        <a href="https://wa.me/919064240211?text=Hi! I would like to adopt the Miyazaki Mango (₹999) for my balcony." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-forest text-linen py-2 rounded-xl text-xs font-medium hover:bg-darkforest transition">
                             Adopt Sapling ↗
                         </a>
                     </div>
                 </div>
 
                 <!-- Katimon Mango -->
-                <div class="bg-[#263325]/80 backdrop-blur-sm border border-[#3F523D] rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-md">
+                <div class="bg-cardbg border border-sand rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-xl">
                     <div class="space-y-2">
                         <div class="flex justify-between items-start">
-                            <span class="text-[10px] tracking-wider uppercase bg-[#3F523D] text-[#D5DDD2] px-2 py-0.5 rounded">Rare Mangoes</span>
-                            <span class="font-serif text-linen font-semibold">₹420</span>
+                            <span class="text-[10px] tracking-wider uppercase bg-[#E2DDD2] text-forest px-2 py-0.5 rounded font-medium">Rare Mangoes</span>
+                            <span class="font-serif text-forest font-bold">₹420</span>
                         </div>
-                        <h3 class="font-serif text-lg text-linen pt-1">Katimon Mango</h3>
-                        <p class="text-[11px] text-[#A8BCA3] italic">Mangifera indica 'Katimon'</p>
-                        <p class="text-xs text-[#C5D3C1] pt-1 leading-relaxed">All-time 3-times-a-year bearer, compact dwarf habit ideal for balconies.</p>
+                        <h3 class="font-serif text-lg text-forest pt-1">Katimon Mango</h3>
+                        <p class="text-[11px] text-[#60695B] italic">Mangifera indica 'Katimon'</p>
+                        <p class="text-xs text-[#555D52] pt-1 leading-relaxed">All-time 3-times-a-year bearer, compact dwarf habit ideal for balconies.</p>
                     </div>
-                    <div class="border-t border-[#3F523D] pt-3 space-y-2">
-                        <div class="text-[11px] text-[#A8BCA3] flex justify-between">
+                    <div class="border-t border-sand pt-3 space-y-2">
+                        <div class="text-[11px] text-[#60695B] flex justify-between">
                             <span>Fit: 18-24" Pot</span>
                             <span>Harvest: 1-1.5 Yr</span>
                         </div>
-                        <a href="https://wa.me/919064240211?text=Hi! I would like to adopt the Katimon Mango (₹420) for my balcony." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-linen text-forest py-2 rounded-xl text-xs font-medium hover:bg-sand transition">
+                        <a href="https://wa.me/919064240211?text=Hi! I would like to adopt the Katimon Mango (₹420) for my balcony." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-forest text-linen py-2 rounded-xl text-xs font-medium hover:bg-darkforest transition">
                             Adopt Sapling ↗
                         </a>
                     </div>
                 </div>
 
                 <!-- Black Sapote -->
-                <div class="bg-[#263325]/80 backdrop-blur-sm border border-[#3F523D] rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-md">
+                <div class="bg-cardbg border border-sand rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-xl">
                     <div class="space-y-2">
                         <div class="flex justify-between items-start">
-                            <span class="text-[10px] tracking-wider uppercase bg-[#3F523D] text-[#D5DDD2] px-2 py-0.5 rounded">Tropical Exotics</span>
-                            <span class="font-serif text-linen font-semibold">₹2,000</span>
+                            <span class="text-[10px] tracking-wider uppercase bg-[#E2DDD2] text-forest px-2 py-0.5 rounded font-medium">Tropical Exotics</span>
+                            <span class="font-serif text-forest font-bold">₹2,000</span>
                         </div>
-                        <h3 class="font-serif text-lg text-linen pt-1">Black Sapote</h3>
-                        <p class="text-[11px] text-[#A8BCA3] italic">Diospyros nigra</p>
-                        <p class="text-xs text-[#C5D3C1] pt-1 leading-relaxed">Pulp tastes remarkably like rich chocolate pudding when fully soft-ripe.</p>
+                        <h3 class="font-serif text-lg text-forest pt-1">Black Sapote</h3>
+                        <p class="text-[11px] text-[#60695B] italic">Diospyros nigra</p>
+                        <p class="text-xs text-[#555D52] pt-1 leading-relaxed">Pulp tastes remarkably like rich chocolate pudding when fully soft-ripe.</p>
                     </div>
-                    <div class="border-t border-[#3F523D] pt-3 space-y-2">
-                        <div class="text-[11px] text-[#A8BCA3] flex justify-between">
+                    <div class="border-t border-sand pt-3 space-y-2">
+                        <div class="text-[11px] text-[#60695B] flex justify-between">
                             <span>Fit: 24" Drum</span>
                             <span>Harvest: 2.5-3 Yr</span>
                         </div>
-                        <a href="https://wa.me/919064240211?text=Hi! I would like to adopt the Black Sapote (₹2,000) for my balcony." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-linen text-forest py-2 rounded-xl text-xs font-medium hover:bg-sand transition">
+                        <a href="https://wa.me/919064240211?text=Hi! I would like to adopt the Black Sapote (₹2,000) for my balcony." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-forest text-linen py-2 rounded-xl text-xs font-medium hover:bg-darkforest transition">
                             Adopt Sapling ↗
                         </a>
                     </div>
                 </div>
 
                 <!-- Miracle Fruit -->
-                <div class="bg-[#263325]/80 backdrop-blur-sm border border-[#3F523D] rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-md">
+                <div class="bg-cardbg border border-sand rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-xl">
                     <div class="space-y-2">
                         <div class="flex justify-between items-start">
-                            <span class="text-[10px] tracking-wider uppercase bg-[#3F523D] text-[#D5DDD2] px-2 py-0.5 rounded">Novelty</span>
-                            <span class="font-serif text-linen font-semibold">₹899</span>
+                            <span class="text-[10px] tracking-wider uppercase bg-[#E2DDD2] text-forest px-2 py-0.5 rounded font-medium">Novelty</span>
+                            <span class="font-serif text-forest font-bold">₹899</span>
                         </div>
-                        <h3 class="font-serif text-lg text-linen pt-1">Miracle Fruit</h3>
-                        <p class="text-[11px] text-[#A8BCA3] italic">Synsepalum dulcificum</p>
-                        <p class="text-xs text-[#C5D3C1] pt-1 leading-relaxed">Eating the small red berry temporarily transforms sour foods into sweet.</p>
+                        <h3 class="font-serif text-lg text-forest pt-1">Miracle Fruit</h3>
+                        <p class="text-[11px] text-[#60695B] italic">Synsepalum dulcificum</p>
+                        <p class="text-xs text-[#555D52] pt-1 leading-relaxed">Eating the small red berry temporarily transforms sour foods into sweet.</p>
                     </div>
-                    <div class="border-t border-[#3F523D] pt-3 space-y-2">
-                        <div class="text-[11px] text-[#A8BCA3] flex justify-between">
+                    <div class="border-t border-sand pt-3 space-y-2">
+                        <div class="text-[11px] text-[#60695B] flex justify-between">
                             <span>Fit: 14-18" Pot</span>
                             <span>Harvest: 1.5-2 Yr</span>
                         </div>
-                        <a href="https://wa.me/919064240211?text=Hi! I would like to adopt the Miracle Fruit Plant (₹899) for my balcony." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-linen text-forest py-2 rounded-xl text-xs font-medium hover:bg-sand transition">
+                        <a href="https://wa.me/919064240211?text=Hi! I would like to adopt the Miracle Fruit Plant (₹899) for my balcony." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-forest text-linen py-2 rounded-xl text-xs font-medium hover:bg-darkforest transition">
                             Adopt Sapling ↗
                         </a>
                     </div>
                 </div>
 
                 <!-- Taiwan Pink Guava -->
-                <div class="bg-[#263325]/80 backdrop-blur-sm border border-[#3F523D] rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-md">
+                <div class="bg-cardbg border border-sand rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-xl">
                     <div class="space-y-2">
                         <div class="flex justify-between items-start">
-                            <span class="text-[10px] tracking-wider uppercase bg-[#3F523D] text-[#D5DDD2] px-2 py-0.5 rounded">Guavas</span>
-                            <span class="font-serif text-linen font-semibold">₹290</span>
+                            <span class="text-[10px] tracking-wider uppercase bg-[#E2DDD2] text-forest px-2 py-0.5 rounded font-medium">Guavas</span>
+                            <span class="font-serif text-forest font-bold">₹290</span>
                         </div>
-                        <h3 class="font-serif text-lg text-linen pt-1">Taiwan Pink Guava</h3>
-                        <p class="text-[11px] text-[#A8BCA3] italic">Psidium guajava</p>
-                        <p class="text-xs text-[#C5D3C1] pt-1 leading-relaxed">Crisp pink flesh with very few seeds; heavy balcony fruitier.</p>
+                        <h3 class="font-serif text-lg text-forest pt-1">Taiwan Pink Guava</h3>
+                        <p class="text-[11px] text-[#60695B] italic">Psidium guajava</p>
+                        <p class="text-xs text-[#555D52] pt-1 leading-relaxed">Crisp pink flesh with very few seeds; heavy balcony fruitier.</p>
                     </div>
-                    <div class="border-t border-[#3F523D] pt-3 space-y-2">
-                        <div class="text-[11px] text-[#A8BCA3] flex justify-between">
+                    <div class="border-t border-sand pt-3 space-y-2">
+                        <div class="text-[11px] text-[#60695B] flex justify-between">
                             <span>Fit: 16-20" Pot</span>
                             <span>Harvest: 6-8 Mo</span>
                         </div>
-                        <a href="https://wa.me/919064240211?text=Hi! I would like to adopt the Taiwan Pink Guava (₹290) for my balcony." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-linen text-forest py-2 rounded-xl text-xs font-medium hover:bg-sand transition">
+                        <a href="https://wa.me/919064240211?text=Hi! I would like to adopt the Taiwan Pink Guava (₹290) for my balcony." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-forest text-linen py-2 rounded-xl text-xs font-medium hover:bg-darkforest transition">
                             Adopt Sapling ↗
                         </a>
                     </div>
                 </div>
 
                 <!-- Kagzi Lemon -->
-                <div class="bg-[#263325]/80 backdrop-blur-sm border border-[#3F523D] rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-md">
+                <div class="bg-cardbg border border-sand rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-xl">
                     <div class="space-y-2">
                         <div class="flex justify-between items-start">
-                            <span class="text-[10px] tracking-wider uppercase bg-[#3F523D] text-[#D5DDD2] px-2 py-0.5 rounded">Lemons & Limes</span>
-                            <span class="font-serif text-linen font-semibold">₹230</span>
+                            <span class="text-[10px] tracking-wider uppercase bg-[#E2DDD2] text-forest px-2 py-0.5 rounded font-medium">Lemons & Limes</span>
+                            <span class="font-serif text-forest font-bold">₹230</span>
                         </div>
-                        <h3 class="font-serif text-lg text-linen pt-1">Kagzi Lemon</h3>
-                        <p class="text-[11px] text-[#A8BCA3] italic">Citrus aurantifolia</p>
-                        <p class="text-xs text-[#C5D3C1] pt-1 leading-relaxed">Classic thin-skinned aromatic Indian kitchen lemon for balcony pots.</p>
+                        <h3 class="font-serif text-lg text-forest pt-1">Kagzi Lemon</h3>
+                        <p class="text-[11px] text-[#60695B] italic">Citrus aurantifolia</p>
+                        <p class="text-xs text-[#555D52] pt-1 leading-relaxed">Classic thin-skinned aromatic Indian kitchen lemon for balcony pots.</p>
                     </div>
-                    <div class="border-t border-[#3F523D] pt-3 space-y-2">
-                        <div class="text-[11px] text-[#A8BCA3] flex justify-between">
+                    <div class="border-t border-sand pt-3 space-y-2">
+                        <div class="text-[11px] text-[#60695B] flex justify-between">
                             <span>Fit: 15-18" Pot</span>
                             <span>Harvest: 6-12 Mo</span>
                         </div>
-                        <a href="https://wa.me/919064240211?text=Hi! I would like to adopt the Kagzi Lemon (₹230) for my balcony." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-linen text-forest py-2 rounded-xl text-xs font-medium hover:bg-sand transition">
+                        <a href="https://wa.me/919064240211?text=Hi! I would like to adopt the Kagzi Lemon (₹230) for my balcony." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-forest text-linen py-2 rounded-xl text-xs font-medium hover:bg-darkforest transition">
                             Adopt Sapling ↗
                         </a>
                     </div>
                 </div>
 
                 <!-- Hariman 99 Apple -->
-                <div class="bg-[#263325]/80 backdrop-blur-sm border border-[#3F523D] rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-md">
+                <div class="bg-cardbg border border-sand rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-xl">
                     <div class="space-y-2">
                         <div class="flex justify-between items-start">
-                            <span class="text-[10px] tracking-wider uppercase bg-[#3F523D] text-[#D5DDD2] px-2 py-0.5 rounded">Low-Chill Apples</span>
-                            <span class="font-serif text-linen font-semibold">₹330</span>
+                            <span class="text-[10px] tracking-wider uppercase bg-[#E2DDD2] text-forest px-2 py-0.5 rounded font-medium">Low-Chill Apples</span>
+                            <span class="font-serif text-forest font-bold">₹330</span>
                         </div>
-                        <h3 class="font-serif text-lg text-linen pt-1">Hariman 99 Apple</h3>
-                        <p class="text-[11px] text-[#A8BCA3] italic">Malus domestica</p>
-                        <p class="text-xs text-[#C5D3C1] pt-1 leading-relaxed">The breakthrough low-chill apple that fruits successfully in warm plains.</p>
+                        <h3 class="font-serif text-lg text-forest pt-1">Hariman 99 Apple</h3>
+                        <p class="text-[11px] text-[#60695B] italic">Malus domestica</p>
+                        <p class="text-xs text-[#555D52] pt-1 leading-relaxed">The breakthrough low-chill apple that fruits successfully in warm plains.</p>
                     </div>
-                    <div class="border-t border-[#3F523D] pt-3 space-y-2">
-                        <div class="text-[11px] text-[#A8BCA3] flex justify-between">
+                    <div class="border-t border-sand pt-3 space-y-2">
+                        <div class="text-[11px] text-[#60695B] flex justify-between">
                             <span>Fit: 18-24" Pot</span>
                             <span>Harvest: 1.5-2 Yr</span>
                         </div>
-                        <a href="https://wa.me/919064240211?text=Hi! I would like to adopt the Hariman 99 Apple (₹330) for my balcony." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-linen text-forest py-2 rounded-xl text-xs font-medium hover:bg-sand transition">
+                        <a href="https://wa.me/919064240211?text=Hi! I would like to adopt the Hariman 99 Apple (₹330) for my balcony." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-forest text-linen py-2 rounded-xl text-xs font-medium hover:bg-darkforest transition">
                             Adopt Sapling ↗
                         </a>
                     </div>
                 </div>
 
                 <!-- Thailand Pink Coconut -->
-                <div class="bg-[#263325]/80 backdrop-blur-sm border border-[#3F523D] rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-md">
+                <div class="bg-cardbg border border-sand rounded-2xl p-5 flex flex-col justify-between space-y-4 shadow-xl">
                     <div class="space-y-2">
                         <div class="flex justify-between items-start">
-                            <span class="text-[10px] tracking-wider uppercase bg-[#3F523D] text-[#D5DDD2] px-2 py-0.5 rounded">Coconuts</span>
-                            <span class="font-serif text-linen font-semibold">₹4,500</span>
+                            <span class="text-[10px] tracking-wider uppercase bg-[#E2DDD2] text-forest px-2 py-0.5 rounded font-medium">Coconuts</span>
+                            <span class="font-serif text-forest font-bold">₹4,500</span>
                         </div>
-                        <h3 class="font-serif text-lg text-linen pt-1">Thailand Pink Coconut</h3>
-                        <p class="text-[11px] text-[#A8BCA3] italic">Cocos nucifera</p>
-                        <p class="text-xs text-[#C5D3C1] pt-1 leading-relaxed">Dwarf coconut that bears fruit at ground level with high ornamental value.</p>
+                        <h3 class="font-serif text-lg text-forest pt-1">Thailand Pink Coconut</h3>
+                        <p class="text-[11px] text-[#60695B] italic">Cocos nucifera</p>
+                        <p class="text-xs text-[#555D52] pt-1 leading-relaxed">Dwarf coconut that bears fruit at ground level with high ornamental value.</p>
                     </div>
-                    <div class="border-t border-[#3F523D] pt-3 space-y-2">
-                        <div class="text-[11px] text-[#A8BCA3] flex justify-between">
+                    <div class="border-t border-sand pt-3 space-y-2">
+                        <div class="text-[11px] text-[#60695B] flex justify-between">
                             <span>Fit: Large Drum</span>
                             <span>Harvest: 2.5-3 Yr</span>
                         </div>
-                        <a href="https://wa.me/919064240211?text=Hi! I would like to inquire about the Thailand Pink Coconut (₹4,500)." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-linen text-forest py-2 rounded-xl text-xs font-medium hover:bg-sand transition">
+                        <a href="https://wa.me/919064240211?text=Hi! I would like to inquire about the Thailand Pink Coconut (₹4,500)." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-forest text-linen py-2 rounded-xl text-xs font-medium hover:bg-darkforest transition">
                             Inquire via WhatsApp ↗
                         </a>
                     </div>
@@ -326,38 +327,38 @@
         <!-- FAQ SECTION -->
         <section id="faq" class="mt-28 space-y-8">
             <div class="text-center max-w-xl mx-auto space-y-3">
-                <span class="text-xs font-semibold tracking-widest text-[#B5C4B1] uppercase">Common Inquiries</span>
+                <span class="text-xs font-semibold tracking-widest text-[#A3B89F] uppercase">Common Inquiries</span>
                 <h2 class="font-serif text-3xl md:text-4xl text-linen">Frequently Asked Questions</h2>
-                <p class="text-sm text-[#B5C4B1]">Everything you need to know about growing an orchard on your balcony.</p>
+                <p class="text-sm text-[#C5D5C1]">Everything you need to know about growing an orchard on your balcony.</p>
             </div>
 
             <div class="space-y-4 max-w-2xl mx-auto pt-4">
-                <details class="bg-[#263325]/80 backdrop-blur-sm border border-[#3F523D] p-6 rounded-2xl cursor-pointer group shadow-md">
-                    <summary class="font-serif text-lg text-linen font-medium flex justify-between items-center">
+                <details class="bg-cardbg border border-sand p-6 rounded-2xl cursor-pointer group shadow-xl text-[#444D41]">
+                    <summary class="font-serif text-lg text-forest font-medium flex justify-between items-center">
                         Will a fruit tree actually grow and fruit in a balcony pot?
-                        <span class="text-[#B5C4B1] group-open:rotate-45 transition transform text-xl font-sans">+</span>
+                        <span class="text-terracotta group-open:rotate-45 transition transform text-xl font-sans">+</span>
                     </summary>
-                    <p class="text-sm text-[#A8BCA3] pt-3 leading-relaxed border-t border-[#3F523D] mt-3">
+                    <p class="text-sm text-[#555D52] pt-3 leading-relaxed border-t border-sand mt-3">
                         Yes. Our container-acclimatized dwarf and grafted varieties (like Katimon mangoes or pink guavas) are specifically bred to maintain compact root structures while bearing full-sized fruit in 14 to 24-inch pots with adequate sunlight.
                     </p>
                 </details>
 
-                <details class="bg-[#263325]/80 backdrop-blur-sm border border-[#3F523D] p-6 rounded-2xl cursor-pointer group">
-                    <summary class="font-serif text-lg text-linen font-medium flex justify-between items-center">
+                <details class="bg-cardbg border border-sand p-6 rounded-2xl cursor-pointer group shadow-xl text-[#444D41]">
+                    <summary class="font-serif text-lg text-forest font-medium flex justify-between items-center">
                         How are live plants packed so they survive shipping?
-                        <span class="text-[#B5C4B1] group-open:rotate-45 transition transform text-xl font-sans">+</span>
+                        <span class="text-terracotta group-open:rotate-45 transition transform text-xl font-sans">+</span>
                     </summary>
-                    <p class="text-sm text-[#A8BCA3] pt-3 leading-relaxed border-t border-[#3F523D] mt-3">
+                    <p class="text-sm text-[#555D52] pt-3 leading-relaxed border-t border-sand mt-3">
                         We use rugged vertical corrugated packing that locks root moisture and protects tender branches from transit stress. You receive a pre-dispatch verification photo on WhatsApp before your tree leaves our nursery.
                     </p>
                 </details>
 
-                <details class="bg-[#263325]/80 backdrop-blur-sm border border-[#3F523D] p-6 rounded-2xl cursor-pointer group">
-                    <summary class="font-serif text-lg text-linen font-medium flex justify-between items-center">
+                <details class="bg-cardbg border border-sand p-6 rounded-2xl cursor-pointer group shadow-xl text-[#444D41]">
+                    <summary class="font-serif text-lg text-forest font-medium flex justify-between items-center">
                         How do I place an order or get care advice?
-                        <span class="text-[#B5C4B1] group-open:rotate-45 transition transform text-xl font-sans">+</span>
+                        <span class="text-terracotta group-open:rotate-45 transition transform text-xl font-sans">+</span>
                     </summary>
-                    <p class="text-sm text-[#A8BCA3] pt-3 leading-relaxed border-t border-[#3F523D] mt-3">
+                    <p class="text-sm text-[#555D52] pt-3 leading-relaxed border-t border-sand mt-3">
                         All orders and variety consultations are managed directly through our WhatsApp nursery desk to guarantee personal attention. Tap any "Adopt Sapling" button on this page to chat instantly with our team.
                     </p>
                 </details>
@@ -365,9 +366,9 @@
         </section>
 
         <!-- CONTACT & FOOTER -->
-        <section id="contact" class="mt-28 bg-[#1B241A] border border-[#3F523D] rounded-3xl p-8 md:p-12 text-center space-y-6 shadow-2xl">
+        <section id="contact" class="mt-28 bg-[#141D13] border border-[#2F422D] rounded-3xl p-8 md:p-12 text-center space-y-6 shadow-2xl">
             <h2 class="font-serif text-3xl text-linen">Start Your Balcony Orchard Today</h2>
-            <p class="text-sm text-[#B5C4B1] max-w-md mx-auto leading-relaxed">
+            <p class="text-sm text-[#C5D5C1] max-w-md mx-auto leading-relaxed">
                 Have questions about your balcony's sunlight hours or container sizing? Our nursery desk is always open.
             </p>
             <div class="pt-2">
@@ -375,7 +376,7 @@
                     Connect on WhatsApp: +91 9064240211 ↗
                 </a>
             </div>
-            <div class="pt-8 border-t border-[#2F3E2E] flex flex-col sm:flex-row justify-between items-center text-xs text-[#8FA58C] gap-4">
+            <div class="pt-8 border-t border-[#2F422D] flex flex-col sm:flex-row justify-between items-center text-xs text-[#8FA58C] gap-4">
                 <p>&copy; 2026 June & Jamun. All rights reserved.</p>
                 <p>Your balcony orchard, curated across India.</p>
             </div>
